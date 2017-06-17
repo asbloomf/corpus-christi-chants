@@ -1,0 +1,8 @@
+*.pdf
+*.glog
+*.gtex
+*.aux
+*.fdb_latexmk
+*.fls
+*.gaux
+*.log

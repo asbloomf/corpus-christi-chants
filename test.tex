@@ -1,0 +1,22 @@
+\documentclass[letterpaper,12pt]{book} % use larger type; default would be 10pt
+\usepackage{geometry} % See geometry.pdf to learn the layout options. There are lots.
+%\geometry{letterpaper} % or letterpaper (US) or a5paper or....
+\usepackage[allowdeprecated=false]{gregoriotex} % for gregorio score inclusion
+\ifdefined\gresetcompilegabc
+    \gresetcompilegabc{auto}
+\fi
+
+% set font
+\usepackage{fontspec}
+\renewcommand*\oldstylenums[1]{#1}
+\AtBeginDocument{\fontspec[Ligatures=TeX,Numbers=OldStyle]{Minion Pro}}
+\newcommand\minion[1]{\fontspec[Ligatures=TeX,Numbers=OldStyle]{Minion Pro}#1}
+
+\geometry{outer=0.5in,inner=0.5in,top=0.5in,bottom=0.5in}
+
+\begin{document}
+
+\gresetinitiallines{1}
+\input{include.tex}
+
+\end{document}
